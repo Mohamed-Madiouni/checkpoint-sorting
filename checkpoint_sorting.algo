@@ -3,6 +3,7 @@ VAR
     tab : ARRAY_OF INTEGER[50];
     i,elm,pos : INTEGER;
 BEGIN
+    Read(tab)
     FOR i FROM 1 TO tab.length-1  DO
         elm := tab[i];
         pos:=i
