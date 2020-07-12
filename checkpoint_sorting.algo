@@ -1,0 +1,15 @@
+ALGORITHM inseretion_sort
+VAR
+    tab : ARRAY_OF INTEGER[50];
+    i,elm,pos : INTEGER;
+BEGIN
+    FOR i FROM 1 TO tab.length-1  DO
+        elm := tab[i];
+        pos:=i
+        WHILE (pos>0 && tab[pos-1]>elm) DO
+            tab[pos]:=tab[pos-1]);
+            pos := pos-1;
+        END_WHILE
+        tab[pos]:=elm;
+    END_FOR
+END
